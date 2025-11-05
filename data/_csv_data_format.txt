@@ -1,0 +1,6 @@
+academic
+timeframe;title;url;description;supplemental_links
+
+publications
+star;timeframe;pub;title;url;image;
+

@@ -119,11 +119,11 @@ if tab == 0:
 
     # pub articles here
     st.write("")
-    col1, col2, col3, col4 = st.columns([3, 3, 3, 3], gap="small")
-    columns = [col1, col2, col3, col4]
+    col1, spc, col2, spc, col3 = st.columns([3, 0.1, 3, 0.1, 3], gap="small")
+    columns = [col1, col2, col3]
 
     for idx, row in filtered_df.iterrows():
-        col_idx = idx % 4
+        col_idx = idx % 3
         with columns[col_idx]:
             url = row['url'] if pd.notna(row['url']) else ""
             # clickable container to url
@@ -147,13 +147,14 @@ if tab == 0:
             '''
             image_url = row['image'] if pd.notna(row['image']) else ""
             if image_url:
-                html += f'<img src="{image_url.strip()}" alt="Image" style="max-width: 100%; border-radius: 6px; margin-bottom: 10px;">'
+                html += f'<img src="{image_url.strip()}" alt="Image" style="width: 100%; border-radius: 6px; margin-bottom: 10px;">'
             html += '''
                 </div>
             </div>
             </a>
             '''
             st.markdown(html, unsafe_allow_html=True)
+            st.divider()
 
 
 

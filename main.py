@@ -27,18 +27,22 @@ st.markdown(
 # links
 my_linkedin = "http://www.linkedin.com/in/william-alex-wong/"
 my_ticker = "https://theticker.org/staff_name/william-alex-wong/"
+my_vercel = "https://william-alex-wong.vercel.app/"
 
 links = [
     my_linkedin,
-    my_ticker
+    my_ticker,
+    my_vercel,
 ]
 
 img_linkedin = "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/1024px-LinkedIn_icon.svg.png"
 img_ticker = "https://yt3.googleusercontent.com/_2N61zOdExgaaZb4D7BlAEuqThe7WcWVGb0Yqfc2jUF3uSXVyONlCeEvrj4bVWB7DyMn-A4cOA=s900-c-k-c0x00ffffff-no-rj"
+img_vercel = "https://img.icons8.com/ios_filled/1200/vercel.jpg"
 
 icon_images = [
     img_linkedin,
-    img_ticker
+    img_ticker,
+    img_vercel,
 ]
 
 
